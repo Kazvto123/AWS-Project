@@ -57,7 +57,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("arn:aws:execute-api:us-east-2:010526271639:ugtjqjl0o8/*/POST/", requestOptions)
+            fetch("https://ugtjqjl0o8.execute-api.us-east-2.amazonaws.com/Dev", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
